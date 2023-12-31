@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy New Year 2024</title>
+  <style>
+    body {
+      background: url('https://i.postimg.cc/kg7NS3nW/Screenshot-20231231-202825.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      border: 5px solid #007bff;
+      position: relative;
+    }
+    #greeting-card {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    #intro {
+      margin-bottom: 20px;
+    }
+    #welcome-image {
+      max-width: 100%;
+      margin-top: 20px;
+    }
+    #jai-shree-ram-btn {
+      background-color: #007bff;
+      color: #fff;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+    #support-text {
+      display: none;
+      margin-top: 20px;
+      font-size: 22px;
+      color: red;
+    }
+    #tech-aman-text {
+      font-size: 28px;
+      color: skyblue;
+      margin-top: 30px;
+      font-weight: bold;
+    }
+    .glitter-text {
+      color: orange;
+      font-size: 24px;
+      position: relative;
+      display: inline-block;
+      animation: glitter 1s infinite alternate;
+    }
+    @keyframes glitter {
+      to {
+        transform: scale(1.1);
+        opacity: 0.8;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="greeting-card">
+    <div id="intro">
+      <h1 style="border: 2px solid red; padding: 10px; display: inline-block;">Welcome to 2024!</h1>
+      <h3 style="color: red;"> My all Hirakud friends ,sisters and others (happy new year )May this year be filled with joy, success, and prosperity. Jai Shree Ram!</h3>
+    </div>
+    <img id="welcome-image" src="https://i.postimg.cc/SxbTtvmK/4-1024x576.jpg" alt="Welcome Image">
+    <button id="jai-shree-ram-btn" onclick="showSupport()">Jai Shree Ram Button</button>
+<p>click the button to support us</p>
+    <div id="support-text">Click the button above to show your support!</div>
+    <div id="tech-aman-text">TECHNICAL AMAN </div>
+
+    <script>
+      function showSupport() {
+        document.getElementById("support-text").style.display = "block";
+        document.getElementById("welcome-image").src = "https://i.postimg.cc/SQ3Yq02m/200w-1.png";
+      }
+    </script>
+  </div>
+
+  <script>
+    setTimeout(function () {
+      var glitterText = document.querySelectorAll('.glitter-text');
+      glitterText.forEach(function (element) {
+        element.style.animation = 'none';
+        element.offsetHeight; /* trigger reflow */
+        element.style.animation = null;
+      });
+    }, 1000);
+  </script>
+
+  <style>
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://i.postimg.cc/SxbTtvmK/4-1024x576.jpg') no-repeat center center;
+      background-size: cover;
+      z-index: -1;
+      opacity: 0.5;
+    }
+  </style>
+
+  <div id="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/5lA29N6e5Yw?autoplay=1&start=1" frameborder="0" allowfullscreen allow="autoplay; encrypted-media"></iframe>
+  </div>
+</body>
+</html>
